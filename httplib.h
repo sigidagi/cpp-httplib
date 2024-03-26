@@ -236,6 +236,10 @@ using socket_t = int;
 #include <utility>
 
 #ifdef CPPHTTPLIB_OPENSSL_SUPPORT
+#undef CPPHTTPLIB_OPENSSL_SUPPORT
+#endif
+
+#ifdef CPPHTTPLIB_OPENSSL_SUPPORT
 #ifdef _WIN32
 #include <wincrypt.h>
 
